@@ -151,7 +151,46 @@ tests/
 └── Feature/                # Pest feature tests
 ```
 
+## 🔮 Planned Features & Roadmap
+
+This project is currently in **MVP (Minimum Viable Product)** phase. The core API is complete and tested. Below is the planned roadmap for upcoming features:
+
+### ✅ Completed (MVP)
+- [x] User Authentication (Register, Login, Logout)
+- [x] Quiz API (Questions, Submission, Result Calculation)
+- [x] Quiz History & User Profile
+- [x] Pest Test Suite
+- [x] Git Version Control with Semantic Commits
+- [x] Basic Documentation
+
+### 🔜 Upcoming Features (Next 4 Weeks)
+
+| Feature | Description | Timeline |
+|--------|-------------|----------|
+| **Stripe Subscription** | Implement 1-tier subscription with 7-day trial, billing management, and webhook handling for `invoice.paid`, `customer.subscription.updated` | Week 1-2 |
+| **PDF Webhook Endpoint** | Add `POST /webhook/pdf-status` to receive status updates from PDF generation service and trigger user notifications | Week 2 |
+| **Email Notifications** | Send emails on: user registration, subscription success, and quiz results (via Mailgun/SMTP) | Week 2-3 |
+| **Password Reset** | Add `/forgot-password` and `/reset-password` endpoints with token-based flow | Week 3 |
+| **User Dashboard API** | Extend `/api/user` to include subscription status, quiz history, and next steps | Week 3 |
+| **GDPR Compliance** | Add data export/delete endpoints and logging compliance | Week 4 |
+| **Staging & Production Deployment** | Deploy to Laravel Forge / VPS with SSL, queue workers, and monitoring | Week 4 |
+
+### 🛠️ Technology Stack (Planned)
+- `laravel/cashier` – Stripe integration
+- `spatie/laravel-webhook-server` – Secure webhook handling
+- `laravel/mail` – Email notifications
+- `laravel/fortify` or custom auth – Password reset
+- GitHub Actions – CI/CD (optional)
+
+---
+
+## 📬 Handover Notes for Client
+
+- This MVP is **fully functional, tested, and ready for the next phase**.
+- All code is clean, well-structured, and follows Laravel best practices.
+- I am available for the next 2+ months to continue working on this project.
+
 📬 Contact
-Siamak Naghel
-Laravel & Full-Stack Developer
-📧 30amak89@gmail.com
+- Siamak Naghel
+- Laravel & Full-Stack Developer
+- 📧 30amak89@gmail.com
