@@ -1,0 +1,81 @@
+{
+  "questions": [
+    {
+      "text": "Do you prefer to spend your time alone?",
+      "sort_order": 1,
+      "options": [
+        { "text": "Strongly Agree", "value": 1, "trait": "introvert", "weight": 4 },
+        { "text": "Agree", "value": 2, "trait": "introvert", "weight": 3 },
+        { "text": "Neutral", "value": 3, "trait": "balance", "weight": 2 },
+        { "text": "Disagree", "value": 4, "trait": "extrovert", "weight": 1 },
+        { "text": "Strongly Disagree", "value": 5, "trait": "extrovert", "weight": 0 }
+      ]
+    },
+    {
+      "text": "Do you often make decisions based on feelings?",
+      "sort_order": 2,
+      "options": [
+        { "text": "Strongly Agree", "value": 1, "trait": "feeling", "weight": 4 },
+        { "text": "Agree", "value": 2, "trait": "feeling", "weight": 3 },
+        { "text": "Neutral", "value": 3, "trait": "thinking", "weight": 2 },
+        { "text": "Disagree", "value": 4, "trait": "thinking", "weight": 1 },
+        { "text": "Strongly Disagree", "value": 5, "trait": "thinking", "weight": 0 }
+      ]
+    },
+    {
+      "text": "Do you like to have a precise plan?",
+      "sort_order": 3,
+      "options": [
+        { "text": "Strongly Agree", "value": 1, "trait": "judging", "weight": 4 },
+        { "text": "Agree", "value": 2, "trait": "judging", "weight": 3 },
+        { "text": "Neutral", "value": 3, "trait": "perceiving", "weight": 2 },
+        { "text": "Disagree", "value": 4, "trait": "perceiving", "weight": 1 },
+        { "text": "Strongly Disagree", "value": 5, "trait": "perceiving", "weight": 0 }
+      ]
+    },
+    {
+      "text": "Are you more interested in ideas and theories than in practical details?",
+      "sort_order": 4,
+      "options": [
+        { "text": "Strongly Agree", "value": 1, "trait": "intuition", "weight": 4 },
+        { "text": "Agree", "value": 2, "trait": "intuition", "weight": 3 },
+        { "text": "Neutral", "value": 3, "trait": "sensing", "weight": 2 },
+        { "text": "Disagree", "value": 4, "trait": "sensing", "weight": 1 },
+        { "text": "Strongly Disagree", "value": 5, "trait": "sensing", "weight": 0 }
+      ]
+    },
+    {
+      "text": "Do you feel energized after spending time with a large group of people?",
+      "sort_order": 5,
+      "options": [
+        { "text": "Strongly Agree", "value": 1, "trait": "extrovert", "weight": 4 },
+        { "text": "Agree", "value": 2, "trait": "extrovert", "weight": 3 },
+        { "text": "Neutral", "value": 3, "trait": "balance", "weight": 2 },
+        { "text": "Disagree", "value": 4, "trait": "introvert", "weight": 1 },
+        { "text": "Strongly Disagree", "value": 5, "trait": "introvert", "weight": 0 }
+      ]
+    },
+    {
+      "text": "When making decisions, do you focus more on logic than on people's feelings?",
+      "sort_order": 6,
+      "options": [
+        { "text": "Strongly Agree", "value": 1, "trait": "thinking", "weight": 4 },
+        { "text": "Agree", "value": 2, "trait": "thinking", "weight": 3 },
+        { "text": "Neutral", "value": 3, "trait": "feeling", "weight": 2 },
+        { "text": "Disagree", "value": 4, "trait": "feeling", "weight": 1 },
+        { "text": "Strongly Disagree", "value": 5, "trait": "feeling", "weight": 0 }
+      ]
+    },
+    {
+      "text": "Do you prefer to keep your options open rather than make firm decisions?",
+      "sort_order": 7,
+      "options": [
+        { "text": "Strongly Agree", "value": 1, "trait": "perceiving", "weight": 4 },
+        { "text": "Agree", "value": 2, "trait": "perceiving", "weight": 3 },
+        { "text": "Neutral", "value": 3, "trait": "judging", "weight": 2 },
+        { "text": "Disagree", "value": 4, "trait": "judging", "weight": 1 },
+        { "text": "Strongly Disagree", "value": 5, "trait": "judging", "weight": 0 }
+      ]
+    }
+  ]
+}
