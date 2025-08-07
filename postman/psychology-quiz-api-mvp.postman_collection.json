@@ -253,6 +253,146 @@
           "response": []
         }
       ]
+    },
+    {
+      "name": "Subscription",
+      "item": [
+        {
+        "name": "Start Subscription",
+        "request": {
+            "method": "POST",
+            "header": [
+            {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+            },
+            {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+            },
+            {
+                "key": "Authorization",
+                "value": "Bearer {{user_token}}",
+                "type": "text"
+            }
+            ],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"payment_method\": \"pm_card_visa\"\n}",
+            "options": {
+                "raw": {
+                "language": "json"
+                }
+            }
+            },
+            "url": {
+            "raw": "{{base_url}}/api/subscription",
+            "host": [
+                "{{base_url}}"
+            ],
+            "path": [
+                "api",
+                "subscription"
+            ]
+            },
+            "description": "Start a new subscription with a 7-day trial. Uses a test payment method (pm_card_visa) that always succeeds."
+        },
+        "response": []
+        },
+        {
+        "name": "Get Subscription Status",
+        "request": {
+            "method": "GET",
+            "header": [
+            {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+            },
+            {
+                "key": "Authorization",
+                "value": "Bearer {{user_token}}",
+                "type": "text"
+            }
+            ],
+            "url": {
+            "raw": "{{base_url}}/api/subscription",
+            "host": [
+                "{{base_url}}"
+            ],
+            "path": [
+                "api",
+                "subscription"
+            ]
+            },
+            "description": "Retrieve the current subscription status, trial end date, and plan details."
+        },
+        "response": []
+        },
+        {
+        "name": "Cancel Subscription",
+        "request": {
+            "method": "DELETE",
+            "header": [
+            {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+            },
+            {
+                "key": "Authorization",
+                "value": "Bearer {{user_token}}",
+                "type": "text"
+            }
+            ],
+            "url": {
+            "raw": "{{base_url}}/api/subscription",
+            "host": [
+                "{{base_url}}"
+            ],
+            "path": [
+                "api",
+                "subscription"
+            ]
+            },
+            "description": "Cancel the current subscription. The user can continue using the service until the end of the billing period."
+        },
+        "response": []
+        },
+        {
+        "name": "Resume Subscription",
+        "request": {
+            "method": "POST",
+            "header": [
+            {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+            },
+            {
+                "key": "Authorization",
+                "value": "Bearer {{user_token}}",
+                "type": "text"
+            }
+            ],
+            "url": {
+            "raw": "{{base_url}}/api/subscription/resume",
+            "host": [
+                "{{base_url}}"
+            ],
+            "path": [
+                "api",
+                "subscription",
+                "resume"
+            ]
+            },
+            "description": "Resume a canceled subscription if it's still within the grace period."
+        },
+        "response": []
+        }
+       ]
     }
   ],
   "event": [
